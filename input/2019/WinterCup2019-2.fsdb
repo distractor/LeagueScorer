@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Fs version="3.5" comment="Supports only a single Fs element in a .fsdb file which must be the root element.">
   <FsCompetition id="0" name="Winter Cup 2019" location="Nova Gorica" from="2019-03-01" to="2019-03-03" utc_offset="1" discipline="pg" ftv_factor="0">
+
     <FsScoreFormula id="GAP2016" min_dist="7" nom_dist="30" nom_time="1" nom_launch="0.96" nom_goal="0.25" day_quality_override="0" bonus_gr="4" jump_the_gun_factor="0" jump_the_gun_max="0" normalize_1000_before_day_quality="0" time_points_if_not_in_goal="0" use_1000_points_for_max_day_quality="0" use_arrival_position_points="0" use_arrival_time_points="0" use_departure_points="0" use_difficulty_for_distance_points="0" use_distance_points="1" use_distance_squared_for_LC="1" use_leading_points="1" use_semi_circle_control_zone_for_goal_line="1" use_time_points="1" scoring_altitude="QNH" final_glide_decelerator="none" no_final_glide_decelerator_reason="" min_time_span_for_valid_task="60" score_back_time="5" use_proportional_leading_weight_if_nobody_in_goal="1" double_leading_weight="0" />
     <FsCompetitionNotes><![CDATA[]]></FsCompetitionNotes>
     <FsParticipants>

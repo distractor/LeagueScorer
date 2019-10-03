@@ -1230,7 +1230,13 @@
         </FsTaskScoreParams>
       </FsTask>
       <FsTask id="3" name="Task 3" tracklog_folder="Tracks T3">
-        <FsScoreFormula id="GAP2018" min_dist="6" nom_dist="45" nom_time="1.5" nom_launch="0.96" nom_goal="0.25" day_quality_override="0" bonus_gr="4" jump_the_gun_factor="0" jump_the_gun_max="0" normalize_1000_before_day_quality="0" time_points_if_not_in_goal="0" use_1000_points_for_max_day_quality="0" use_arrival_position_points="0" use_arrival_time_points="0" use_departure_points="0" use_difficulty_for_distance_points="0" use_distance_points="1" use_distance_squared_for_LC="1" use_leading_points="1" use_semi_circle_control_zone_for_goal_line="1" use_time_points="1" scoring_altitude="QNH" final_glide_decelerator="none" no_final_glide_decelerator_reason="" min_time_span_for_valid_task="60" score_back_time="5" use_proportional_leading_weight_if_nobody_in_goal="1" leading_weight_factor="1" turnpoint_radius_tolerance="0.002" />
+        <FsScoreFormula id="GAP2018" min_dist="6" nom_dist="45" nom_time="1.5" nom_launch="0.96" nom_goal="0.25"
+        day_quality_override="0" bonus_gr="4" jump_the_gun_factor="0" jump_the_gun_max="0" normalize_1000_before_day_quality="0"
+        time_points_if_not_in_goal="0" use_1000_points_for_max_day_quality="0" use_arrival_position_points="0" use_arrival_time_points="0"
+         use_departure_points="0" use_difficulty_for_distance_points="0" use_distance_points="1"
+         use_distance_squared_for_LC="1" use_leading_points="1" use_semi_circle_control_zone_for_goal_line="1" use_time_points="1"
+         scoring_altitude="QNH" final_glide_decelerator="none" no_final_glide_decelerator_reason="" min_time_span_for_valid_task="60"
+         score_back_time="5" use_proportional_leading_weight_if_nobody_in_goal="1" leading_weight_factor="1" turnpoint_radius_tolerance="0.002" />
         <FsTaskDefinition ss="2" es="11" goal="CIRCLE" groundstart="0" qnh_setting="1013,25">
           <FsTurnpoint id="B01164" lat="46.23695" lon="14.09055" altitude="1640" radius="400" open="2019-06-29T13:00:00+02:00" close="2019-06-29T14:30:00+02:00" />
           <FsTurnpoint id="B01164" lat="46.23695" lon="14.09055" altitude="1640" radius="2500" open="2019-06-29T14:00:00+02:00" close="2019-06-29T19:00:00+02:00" />
@@ -1439,10 +1445,24 @@
             <FsResult rank="29" points="688" distance="53.363" ss_time="02:09:06" finished_ss_rank="30" distance_points="395.1" time_points="249.5" arrival_points="0" departure_points="0" leading_points="43" penalty="0" penalty_points="0" penalty_reason="" penalty_points_auto="0" penalty_reason_auto="" penalty_min_dist_points="0" got_time_but_not_goal_penalty="False" started_ss="2019-06-29T14:00:00+02:00" finished_ss="2019-06-29T16:09:06+02:00" ss_time_dec_hours="2.15166666666667" ts="2019-07-01T18:41:38+02:00" real_distance="53.363" last_distance="53.363" last_altitude_above_goal="0" altitude_bonus_seconds="0" altitude_bonus_time="00:00:00" altitude_at_ess="676" scored_ss_time="02:09:06" landed_before_stop="False" />
           </FsParticipant>
           <FsParticipant id="46">
-            <FsFlightData distance="53.364" bonus_distance="53.364" started_ss="2019-06-29T14:00:18+02:00" finished_ss="2019-06-29T15:41:30+02:00" altitude_at_ess="825" finished_task="2019-06-29T15:42:13+02:00" tracklog_filename="LiveTrack Primož Suša.30012.20190629-090238.377.46.igc" lc="1.30579019878117" iv="6032729" ts="2019-07-01T18:41:14+02:00" alt="-32768" bonus_alt="-32768" max_alt="0" last_tracklog_point_distance="53.364" bonus_last_tracklog_point_distance="53.364" last_tracklog_point_time="2019-06-29T15:42:13+02:00" last_tracklog_point_alt="-32768" landed_before_deadline="1" reachedGoal="1" />
+
+            <FsFlightData distance="53.364" bonus_distance="53.364" started_ss="2019-06-29T14:00:18+02:00"
+            finished_ss="2019-06-29T15:41:30+02:00" altitude_at_ess="825" finished_task="2019-06-29T15:42:13+02:00"
+            tracklog_filename="LiveTrack Primož Suša.30012.20190629-090238.377.46.igc" lc="1.30579019878117" iv="6032729"
+            ts="2019-07-01T18:41:14+02:00" alt="-32768" bonus_alt="-32768" max_alt="0" last_tracklog_point_distance="53.364"
+            bonus_last_tracklog_point_distance="53.364" last_tracklog_point_time="2019-06-29T15:42:13+02:00" last_tracklog_point_alt="-32768"
+            landed_before_deadline="1" reachedGoal="1" />
             <FsFlightDataWarning warning="No baro altitude!" />
-            <FsResult rank="1" points="988" distance="53.363" ss_time="01:41:30" finished_ss_rank="1" distance_points="395.1" time_points="499" arrival_points="0" departure_points="0" leading_points="94.2" penalty="0" penalty_points="0" penalty_reason="" penalty_points_auto="0" penalty_reason_auto="" penalty_min_dist_points="0" got_time_but_not_goal_penalty="False" started_ss="2019-06-29T14:00:00+02:00" finished_ss="2019-06-29T15:41:30+02:00" ss_time_dec_hours="1.69166666666667" ts="2019-07-01T18:41:38+02:00" real_distance="53.363" last_distance="53.363" last_altitude_above_goal="0" altitude_bonus_seconds="0" altitude_bonus_time="00:00:00" altitude_at_ess="395" scored_ss_time="01:41:30" landed_before_stop="False" />
+            <FsResult rank="1" points="988" distance="53.363" ss_time="01:41:30" finished_ss_rank="1" distance_points="395.1"
+            time_points="499" arrival_points="0" departure_points="0" leading_points="94.2" penalty="0" penalty_points="0"
+            penalty_reason="" penalty_points_auto="0" penalty_reason_auto="" penalty_min_dist_points="0" got_time_but_not_goal_penalty="False"
+            started_ss="2019-06-29T14:00:00+02:00" finished_ss="2019-06-29T15:41:30+02:00" ss_time_dec_hours="1.69166666666667" ts="2019-07-01T18:41:38+02:00"
+            real_distance="53.363" last_distance="53.363" last_altitude_above_goal="0" altitude_bonus_seconds="0" altitude_bonus_time="00:00:00" altitude_at_ess="395"
+             scored_ss_time="01:41:30" landed_before_stop="False" />
           </FsParticipant>
+
+
+
           <FsParticipant id="47">
             <FsFlightData distance="53.364" bonus_distance="53.364" started_ss="2019-06-29T14:00:22+02:00" finished_ss="2019-06-29T16:02:28+02:00" altitude_at_ess="1194" finished_task="2019-06-29T16:03:13+02:00" tracklog_filename="LiveTrack Richárd Dósa.30097.20190629-085023.7582.47.igc" lc="1.74297139492619" iv="8052499" ts="2019-07-01T18:41:15+02:00" alt="-32768" bonus_alt="-32768" max_alt="0" last_tracklog_point_distance="53.364" bonus_last_tracklog_point_distance="53.364" last_tracklog_point_time="2019-06-29T16:03:13+02:00" last_tracklog_point_alt="-32768" landed_before_deadline="1" reachedGoal="1" />
             <FsFlightDataWarning warning="No baro altitude!" />

@@ -4,7 +4,9 @@
     <FsScoreFormula id="GAP2018" min_dist="7" nom_dist="50" nom_time="1.25" nom_launch="0.96" nom_goal="0.25" day_quality_override="0" bonus_gr="4" jump_the_gun_factor="0" jump_the_gun_max="0" normalize_1000_before_day_quality="0" time_points_if_not_in_goal="0" use_1000_points_for_max_day_quality="0" use_arrival_position_points="0" use_arrival_time_points="0" use_departure_points="0" use_difficulty_for_distance_points="0" use_distance_points="1" use_distance_squared_for_LC="1" use_leading_points="1" use_semi_circle_control_zone_for_goal_line="1" use_time_points="1" scoring_altitude="GPS" final_glide_decelerator="none" no_final_glide_decelerator_reason="" min_time_span_for_valid_task="60" score_back_time="5" use_proportional_leading_weight_if_nobody_in_goal="1" leading_weight_factor="1.00" turnpoint_radius_tolerance="0.0005" />
     <FsCompetitionNotes><![CDATA[]]></FsCompetitionNotes>
     <FsParticipants>
-      <FsParticipant id="3" name="Aleš Lipušček" nat_code_3166_a3="SLO" female="0" birthday="1974-12-04" glider="Nova - Nova Triton 2" glider_main_colors="" sponsor="DPL Posočje" fai_licence="1" CIVLID="13907">
+      <FsParticipant id="3" name="Aleš Lipušček" nat_code_3166_a3="SLO"
+      female="0" birthday="1974-12-04" glider="Nova - Nova Triton 2" glider_main_colors=""
+      sponsor="DPL Posočje" fai_licence="1" CIVLID="13907">
         <FsCustomAttributes>
           <FsCustomAttribute name="Class" value="EN-C" />
           <FsCustomAttribute name="Live" value="30108" />
@@ -20,7 +22,8 @@
           <FsCustomAttribute name="Senior" value="" />
         </FsCustomAttributes>
       </FsParticipant>
-      <FsParticipant id="5" name="Andreas Pölzer" nat_code_3166_a3="AUT" female="0" birthday="1971-10-25" glider="Ozone - Ozone Zeno ML" glider_main_colors="" sponsor="" fai_licence="1" CIVLID="1383">
+      <FsParticipant id="5" name="Andreas Pölzer" nat_code_3166_a3="AUT" female="0" birthday="1971-10-25"
+      glider="Ozone - Ozone Zeno ML" glider_main_colors="" sponsor="" fai_licence="1" CIVLID="1383">
         <FsCustomAttributes>
           <FsCustomAttribute name="Class" value="EN-D" />
           <FsCustomAttribute name="Live" value="30070" />
@@ -84,7 +87,8 @@
           <FsCustomAttribute name="Senior" value="" />
         </FsCustomAttributes>
       </FsParticipant>
-      <FsParticipant id="25" name="Christoph Eder" nat_code_3166_a3="AUT" female="0" birthday="1970-01-01" glider="Ozone - enzo 3" glider_main_colors="" sponsor="" fai_licence="1" CIVLID="4387">
+      <FsParticipant id="25" name="Christoph Eder" nat_code_3166_a3="AUT" female="0"
+      birthday="1970-01-01" glider="Ozone - enzo 3" glider_main_colors="" sponsor="" fai_licence="1" CIVLID="4387">
         <FsCustomAttributes>
           <FsCustomAttribute name="Class" value="CCC" />
           <FsCustomAttribute name="Live" value="30269" />
@@ -108,7 +112,8 @@
           <FsCustomAttribute name="Senior" value="" />
         </FsCustomAttributes>
       </FsParticipant>
-      <FsParticipant id="30" name="Dušan Orož" nat_code_3166_a3="SLO" female="0" birthday="1978-12-07" glider="Ozone - enzo 3" glider_main_colors="" sponsor="" fai_licence="1" CIVLID="12672">
+      <FsParticipant id="30" name="Dušan Orož" nat_code_3166_a3="SLO" female="0"
+      birthday="1978-12-07" glider="Ozone - enzo 3" glider_main_colors="" sponsor="" fai_licence="1" CIVLID="12672">
         <FsCustomAttributes>
           <FsCustomAttribute name="Class" value="CCC" />
           <FsCustomAttribute name="Live" value="30110" />
@@ -172,7 +177,8 @@
           <FsCustomAttribute name="Senior" value="" />
         </FsCustomAttributes>
       </FsParticipant>
-      <FsParticipant id="47" name="Jernej Simič" nat_code_3166_a3="SLO" female="0" birthday="1989-05-16" glider="Flow Paragliders - XCRacer" glider_main_colors="" sponsor="Slovenian young paragliding team, Mercator d.d." fai_licence="1" CIVLID="36039">
+      <FsParticipant id="47" name="Jernej Simič" nat_code_3166_a3="SLO" female="0" birthday="1989-05-16"
+       glider="Flow Paragliders - XCRacer" glider_main_colors="" sponsor="Slovenian young paragliding team, Mercator d.d." fai_licence="1" CIVLID="36039">
         <FsCustomAttributes>
           <FsCustomAttribute name="Class" value="EN-D" />
           <FsCustomAttribute name="Live" value="30088" />
@@ -533,11 +539,26 @@
         </FsTaskDefinition>
         <FsTaskState task_state="REGULAR" score_back_time="5" cancel_reason="" stop_time="2019-05-31T12:44:00+02:00" />
         <FsParticipants>
+
+
           <FsParticipant id="3">
             <FsFlightData distance="20.905" bonus_distance="0.000" started_ss="2019-05-31T14:22:05+02:00" finished_ss="" altitude_at_ess="0" finished_task="2019-05-31T15:40:55+02:00" tracklog_filename="LiveTrack Aleš Lipuš_ek.30108.20190531-102228.13907.3.igc" lc="1.98565937867802" iv="6226305" ts="2019-06-02T16:31:53+02:00" alt="-32768" bonus_alt="-32768" max_alt="0" last_tracklog_point_distance="20.623" bonus_last_tracklog_point_distance="0.000" last_tracklog_point_time="2019-05-31T15:45:17+02:00" last_tracklog_point_alt="-32768" landed_before_deadline="1" reachedGoal="0" />
             <FsFlightDataWarning warning="No baro altitude!" />
-            <FsResult rank="30" points="228" distance="20.905" ss_time="00:00:00" finished_ss_rank="2" distance_points="226.1" time_points="0" arrival_points="0" departure_points="0" leading_points="1.6" penalty="0" penalty_points="0" penalty_reason="" penalty_points_auto="0" penalty_reason_auto="" penalty_min_dist_points="0" got_time_but_not_goal_penalty="False" started_ss="2019-05-31T14:20:00+02:00" ss_time_dec_hours="0" ts="2019-06-02T16:32:15+02:00" real_distance="20.905" last_distance="20.623" last_altitude_above_goal="0" altitude_bonus_seconds="0" altitude_bonus_time="00:00:00" altitude_at_ess="0" scored_ss_time="00:00:00" landed_before_stop="False" />
+
+
+            <FsResult rank="30" points="228" distance="20.905" ss_time="00:00:00"
+            finished_ss_rank="2" distance_points="226.1" time_points="0" arrival_points="0"
+            departure_points="0" leading_points="1.6" penalty="0" penalty_points="0" penalty_reason=""
+            penalty_points_auto="0" penalty_reason_auto="" penalty_min_dist_points="0"
+            got_time_but_not_goal_penalty="False" started_ss="2019-05-31T14:20:00+02:00"
+            ss_time_dec_hours="0" ts="2019-06-02T16:32:15+02:00" real_distance="20.905"
+            last_distance="20.623" last_altitude_above_goal="0" altitude_bonus_seconds="0"
+            altitude_bonus_time="00:00:00" altitude_at_ess="0" scored_ss_time="00:00:00"
+            landed_before_stop="False" />
           </FsParticipant>
+
+
+
           <FsParticipant id="4">
             <FsFlightData distance="16.427" bonus_distance="0.000" started_ss="2019-05-31T14:20:20+02:00" finished_ss="" altitude_at_ess="0" finished_task="2019-05-31T15:10:29+02:00" tracklog_filename="LiveTrack Andreas Grübler.30126.20190531-094705.54200.4.igc" lc="2.27710202287791" iv="7140163" ts="2019-06-02T16:31:54+02:00" alt="-32768" bonus_alt="-32768" max_alt="0" last_tracklog_point_distance="15.830" bonus_last_tracklog_point_distance="0.000" last_tracklog_point_time="2019-05-31T15:17:06+02:00" last_tracklog_point_alt="-32768" landed_before_deadline="1" reachedGoal="0" />
             <FsFlightDataWarning warning="No baro altitude!" />
