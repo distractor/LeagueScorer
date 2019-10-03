@@ -7,6 +7,7 @@ class Competition:
 
     # Load from FSDB file
     def loadFromFSDB(self, filePath):
+        print('Loading FSDB file from: %s' % filePath)
         self.fsdbFilePath = filePath                                # Save filePath to class
         self.FSDB = FSDB(self.fsdbFilePath)                         # Create FSDB class
 

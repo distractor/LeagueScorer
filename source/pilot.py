@@ -5,7 +5,15 @@ class Pilot:
 
     # Set pilot name
     def setName(self, Name):
-        self.Name = Name.upper() # Capitalize name
+        _Name = Name
+        _Name = _Name.upper()                   # Capital letters
+        _Name = ' '.join(_Name.split())         # Remove additional spaces
+        # Remove šumniki
+        _Name = _Name.replace('Č', 'C')
+        _Name = _Name.replace('Ć', 'C')
+        _Name = _Name.replace('Š', 'S')
+        _Name = _Name.replace('Ž', 'Z')
+        self.Name = _Name
 
     # Set pilot's competition ID
     def setPilotID(self, ID):
