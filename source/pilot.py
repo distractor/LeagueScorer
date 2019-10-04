@@ -1,7 +1,9 @@
+from source.result import Result
+
 class Pilot:
     # Empty initializer
     def __init__(self):
-        self.setResult(0, 0)
+        self.Result = []
 
     # Set pilot name
     def setName(self, Name):
@@ -48,6 +50,9 @@ class Pilot:
         self.CIVLID = CIVLID
 
     # Set result
-    def setResult(self, Rank, Points):
-        self.Rank = Rank
-        self.Points = Points
+    def addResult(self, Result):
+        self.Result.append(Result)
+
+    def setResult(self, Result):
+        self.Result = []
+        self.addResult(Result)

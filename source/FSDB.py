@@ -1,6 +1,8 @@
 import xml.etree.ElementTree as ET
 from source.pilot import Pilot
 from source.task import Task
+from source.result import Result
+from source.scoring import Scoring
 
 class FSDB:
     # Initializer
@@ -58,10 +60,12 @@ class FSDB:
 
             if (len(child) != 0):
                 pilotResult = child.find('FsResult')
-                p.setResult(int(pilotResult.get('rank')), int(pilotResult.get('points')))       # Set pilot task result
+                Points = int(pilotResult.get('points'))
+                Rank = int(pilotResult.get('rank'))
+                p.addResult(Result(Points, Rank))     # Set pilot task result
             else:
-                p.setResult(0, 0)
-            pilots.append(p)                                                    # Append participant to pilots list
+                p.addResult(Result(0, 0))
+            pilots.append(p)  # Append participant to pilots list
 
         return pilots
 
@@ -80,8 +84,7 @@ class FSDB:
             # Task pilots and their result
             taskParticipants = child.find('FsParticipants')
             t.setPilots(self.getTaskParticipants(taskParticipants))
-            t.orderPilotsByPoints()     # Orders pilots by task points
-            t.setPilotsRank()           # Assigns rank to pilots
+            t.Score('default', True)
             tasks.append(t)
 
         return tasks

@@ -1,4 +1,5 @@
 from source.FSDB import FSDB
+from source.scoring import Scoring
 
 class Competition:
     # Empty initializer
@@ -20,39 +21,19 @@ class Competition:
 
         self.Tasks = FSDB.getCompetitionTasks(self.FSDB)            # Gets tasks flown at comp
 
-    # Get competition results
-    def getResults(self):
+    # Get pilot Name from pilot ID
+    def getPilotFromID(self, ID):
+        for p in self.Pilots:
+            if (p.ID == ID):
+                return p
+
+        return None
+
+    # Get pilots by nation
+    def getPilotsByNation(self, Nation):
+        pilots = []
         for pilot in self.Pilots:
-            for task in self.Tasks:
-                for taskPilot in task.Pilots:
-                    if (taskPilot.ID == pilot.ID):
-                        pilot.Points = pilot.Points + taskPilot.Points
-                        break
+            if pilot.Nationality == Nation:
+                pilots.append(pilot)
 
-        self.orderPilotsByPoints() # order pilot list by points
-        self.setPilotsRank()
-        print('Warning: Results without FTV factor calculated!')
-
-    # Reorder competition pilots by points
-    def orderPilotsByPoints(self):
-        ordered = False
-        while (not ordered):
-            ordered = True
-            for i in range(1, len(self.Pilots)):
-                currentPilot = self.Pilots[i]
-                previousPilot = self.Pilots[i - 1]
-
-                if (currentPilot.Points > previousPilot.Points):
-                    self.Pilots[i] = previousPilot
-                    self.Pilots[i - 1] = currentPilot
-                    ordered = False
-
-    # Assign rank to pilots
-    def setPilotsRank(self):
-        self.Pilots[0].Rank = 1 # winner
-        for i in range(1, len(self.Pilots)):
-            if (self.Pilots[i].Points == self.Pilots[i - 1].Points):
-                # Same points for two (or more) pilots
-                self.Pilots[i].setResult(self.Pilots[i - 1].Rank, self.Pilots[i].Points)
-            else:
-                self.Pilots[i].setResult(i + 1, self.Pilots[i].Points)
+        self.PilotsByNation = pilots
