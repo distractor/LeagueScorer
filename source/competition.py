@@ -1,5 +1,5 @@
 from source.FSDB import FSDB
-from source.scoring import Scoring
+from source.result import Result
 
 class Competition:
     # Empty initializer
@@ -15,25 +15,22 @@ class Competition:
         self.Name = FSDB.getCompetitionName(self.FSDB)              # Get Competition name
         self.Dates = FSDB.getCompetitionDates(self.FSDB)            # Get Competition dates
         self.Location = FSDB.getCompetitionLocation(self.FSDB)      # Get Competition location
-        self.FAISanctioned = FSDB.getFAIsanctioning(self.FSDB)      # Boolean for FAI sanctioned comp
 
         self.Pilots = FSDB.getCompetitionParticipants(self.FSDB)    # Gets participants at comp
-
         self.Tasks = FSDB.getCompetitionTasks(self.FSDB)            # Gets tasks flown at comp
+        self.addResultsToPilotsFromTasks()                                   # Assigns results to pilots from tasks
 
-    # Get pilot Name from pilot ID
-    def getPilotFromID(self, ID):
-        for p in self.Pilots:
-            if (p.ID == ID):
-                return p
+    def addResultsToPilotsFromTasks(self):
+        self.numberOfTasks = len(self.Tasks)
 
-        return None
+        for compPilot in self.Pilots:
+            result = []
+            for task in self.Tasks:
+                # Rank and points
+                for taskPilot in task.Pilots:
+                    if (compPilot.ID == taskPilot.ID):
+                        points = taskPilot.Result.Points
+                        rank = taskPilot.Result.Rank
+                        result.append(Result(points, rank))
 
-    # Get pilots by nation
-    def getPilotsByNation(self, Nation):
-        pilots = []
-        for pilot in self.Pilots:
-            if pilot.Nationality == Nation:
-                pilots.append(pilot)
-
-        self.PilotsByNation = pilots
+            compPilot.Result = result

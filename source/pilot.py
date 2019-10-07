@@ -5,6 +5,9 @@ class Pilot:
     def __init__(self):
         self.Result = []
 
+    def setFinalResult(self, Result):
+        self.finalResult = Result
+
     # Set pilot name
     def setName(self, Name):
         _Name = Name
@@ -26,33 +29,33 @@ class Pilot:
         self.Nationality = nationCode
 
     # Set gender (boolean for female)
-    def setGender(self, Female):
-        self.Female = (Female != '0')
+    # def setGender(self, Female):
+    #     self.Female = (Female != '0')
 
     # Set birthday
-    def setBirthday(self, Born):
-        self.Born = Born
+    # def setBirthday(self, Born):
+    #     self.Born = Born
 
     # Set glider
-    def setGlider(self, Glider):
-        self.Glider = Glider
+    # def setGlider(self, Glider):
+    #     self.Glider = Glider
 
     # Set pilot sponsors
-    def setSponsors(self, Sponsors):
-        self.Sponsors = Sponsors
+    # def setSponsors(self, Sponsors):
+    #     self.Sponsors = Sponsors
 
     # Set fai licence validation
-    def setFAILicence(self, FAILicence):
-        self.validFAI = (FAILicence != '0')
+    # def setFAILicence(self, FAILicence):
+    #     self.validFAI = (FAILicence != '0')
 
     # Set CIVLID
-    def setCIVLID(self, CIVLID):
-        self.CIVLID = CIVLID
+    # def setCIVLID(self, CIVLID):
+    #     self.CIVLID = CIVLID
 
     # Set result
-    def addResult(self, Result):
-        self.Result.append(Result)
+    # def addResult(self, Result):
+    #     self.Result.append(Result)
 
-    def setResult(self, Result):
-        self.Result = []
-        self.addResult(Result)
+    # def setResult(self, Result):
+    #     self.Result = []
+    #     self.addResult(Result)

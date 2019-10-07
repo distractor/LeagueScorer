@@ -1,10 +1,11 @@
 class Result:
+    # -1 for DID NOT FLY
     def __init__(self, Points, Rank):
         self.Points = Points
         self.Rank = Rank
 
-    def setNationRank(self, Rank):
-        self.nationRank = Rank
+    def setTotalPoints(self, Points):
+        self.totalPoints = Points
 
-    def setRank(self, Rank):
-        self.Rank = Rank
+    def setPoints(self, Points):
+        self.Points = Points
