@@ -1,3 +1,3 @@
 # Scoring scripts
 
-All scoring scripts are here.
+All scoring scripts and classes definitions are here.
