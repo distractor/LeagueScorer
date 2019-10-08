@@ -4,8 +4,6 @@ class Result:
         self.Points = Points
         self.Rank = Rank
 
-    def setTotalPoints(self, Points):
-        self.totalPoints = Points
-
+    # sets points
     def setPoints(self, Points):
         self.Points = Points

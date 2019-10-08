@@ -5,6 +5,7 @@ class Pilot:
     def __init__(self):
         self.Result = []
 
+    # Sets final results
     def setFinalResult(self, Result):
         self.finalResult = Result
 
@@ -12,7 +13,7 @@ class Pilot:
     def setName(self, Name):
         _Name = Name
         _Name = _Name.upper()                   # Capital letters
-        _Name = ' '.join(_Name.split())         # Remove additional spaces
+        _Name = ' '.join(_Name.split())         # Remove additional spaces in name
         # Remove šumniki
         _Name = _Name.replace('Č', 'C')
         _Name = _Name.replace('Ć', 'C')
@@ -56,6 +57,6 @@ class Pilot:
     # def addResult(self, Result):
     #     self.Result.append(Result)
 
-    # def setResult(self, Result):
-    #     self.Result = []
-    #     self.addResult(Result)
+    def setResult(self, Result):
+        self.Result = []
+        self.Result = Result
